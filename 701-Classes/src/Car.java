@@ -25,6 +25,10 @@ public class Car {
 	public boolean isConvertible() {
 		return convertible;
 	}
+	
+	public void setMake(String make) {
+		make = make;
+	}
 
 	public void describeCar() {
 		System.out.printf("%d-Door %s %s %s %s\n", doors, color, make, model, convertible ? "Convertible" : "");
