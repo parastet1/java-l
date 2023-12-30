@@ -11,5 +11,13 @@ public class Main {
 		System.out.println("make = " + myCar.getMake());
 		System.out.println("model = " + myCar.getModel());
 		myCar.describeCar();
+
+		Car targa = new Car();
+		targa.setMake("Porsche");
+		targa.setModel("Targa");
+		targa.setColor("Red");
+		targa.setConvertible(false);
+		targa.setDoors(2);
+		targa.describeCar();
 	}
 }
