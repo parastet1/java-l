@@ -2,7 +2,7 @@
 public class Main {
 	public static void main(String[] args) {
 		Car myCar = new Car();
-//		myCar.make = "Porsche";
+		myCar.setMake("Porsche");
 //		myCar.model = "Carrera";
 //		myCar.color = "Red";
 		System.out.println("make = " + myCar.getMake());

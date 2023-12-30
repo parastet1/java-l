@@ -25,9 +25,9 @@ public class Car {
 	public boolean isConvertible() {
 		return convertible;
 	}
-	
+
 	public void setMake(String make) {
-		make = make;
+		this.make = make;
 	}
 
 	public void describeCar() {
