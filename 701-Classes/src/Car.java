@@ -27,7 +27,15 @@ public class Car {
 	}
 
 	public void setMake(String make) {
-		this.make = make;
+		if (make == null) {
+			make = "Unknown";
+		}
+		switch (make.toLowerCase()) {
+		case "holden", "porsche", "tesla" -> this.make = make;
+		default -> {
+			this.make = "Unsupported ";
+		}
+		}
 	}
 
 	public void setModel(String model) {
