@@ -1,70 +1,71 @@
 
 public class BankAccount {
-	private long accountNumber;
-	private double accountBalance;
-	private String accountName;
-	private String accountEmail;
-	private String accountPhone;
-
-	public long getAccountNumber() {
-		return accountNumber;
-	}
-
-	public void setAccountNumber(long accountNumber) {
-		this.accountNumber = accountNumber;
-	}
-
-	public double getAccountBalance() {
-		return accountBalance;
-	}
-
-	public void setAccountBalance(double accountBalance) {
-		this.accountBalance = accountBalance;
-	}
-
-	public String getAccountName() {
-		return accountName;
-	}
-
-	public void setAccountName(String accountName) {
-		this.accountName = accountName;
-	}
-
-	public String getAccountEmail() {
-		return accountEmail;
-	}
-
-	public void setAccountEmail(String accountEmail) {
-		this.accountEmail = accountEmail;
-	}
-
-	public String getAccountPhone() {
-		return accountPhone;
-	}
-
-	public void setAccountPhone(String accountPhone) {
-		this.accountPhone = accountPhone;
-	}
+	private String number;
+	private double balance;
+	private String customeName;
+	private String customerEmail;
+	private String customerPhone;
 
 	public void depositFund(double amount) {
 		if (amount < 0) {
-			System.out.println("Invalid deposit amount " + amount);
+			System.out.println("Invalid deposit Rs. " + amount);
 			return;
 		}
-		accountBalance += amount;
-		System.out.println("You deposited " + amount + ". Current balance is " + accountBalance);
+		balance += amount;
+		System.out.println("You deposited Rs. " + amount + ". Current balance is Rs. " + balance);
 	}
 
 	public void withdrawFund(double amount) {
 		if (amount < 0) {
-			System.out.println("Invalid withdrawal amount " + amount);
+			System.out.println("Invalid withdrawal Rs. " + amount);
 			return;
 		}
-		if (accountBalance < amount) {
-			System.out.println("Insufficient balance");
+		if (balance < amount) {
+			System.out.println("Insufficient balance. You have only Rs. " + balance);
 		} else {
-			accountBalance -= amount;
-			System.out.println("You withdrew " + amount + " Current balance is " + accountBalance);
+			balance -= amount;
+			System.out.println("You withdrew Rs. " + amount + " Current balance is Rs. " + balance);
 		}
 	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public String getCustomeName() {
+		return customeName;
+	}
+
+	public void setCustomeName(String customeName) {
+		this.customeName = customeName;
+	}
+
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
+
+	public void setCustomerEmail(String customerEmail) {
+		this.customerEmail = customerEmail;
+	}
+
+	public String getCustomerPhone() {
+		return customerPhone;
+	}
+
+	public void setCustomerPhone(String customerPhone) {
+		this.customerPhone = customerPhone;
+	}
+
 }
