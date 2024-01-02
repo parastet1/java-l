@@ -12,5 +12,11 @@ public class Main {
 			}, "01/01/2023", "Java Masterclass");
 			System.out.println(s);
 		}
+
+		Student s = new Student("S2023", "Rocker", "01/01/2023", "Java Masterclass");
+		System.out.println(s.id());
+		System.out.println(s.name());
+		System.out.println(s.dateOfBirth());
+		System.out.println(s.classList());
 	}
 }
