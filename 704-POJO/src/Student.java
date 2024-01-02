@@ -11,4 +11,20 @@ public class Student {
 		this.dateOfBirth = dateOfBirth;
 		this.classList = classList;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Student [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", dateOfBirth=");
+		builder.append(dateOfBirth);
+		builder.append(", classList=");
+		builder.append(classList);
+		builder.append("]");
+		return builder.toString();
+	}
+
 }
