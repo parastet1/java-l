@@ -6,6 +6,19 @@ public class BankAccount {
 	private String customerEmail;
 	private String customerPhone;
 
+	public BankAccount() {
+		System.out.println("Empty constructor called");
+	}
+
+	public BankAccount(String number, double balance, String customerName, String email, String customerPhone) {
+		System.out.println("Constructor with parameter called");
+		this.number = number;
+		this.balance = balance;
+		this.customeName = customerName;
+		customerEmail = email;
+		this.customerPhone = customerPhone;
+	}
+
 	public void depositFund(double amount) {
 		if (amount < 0) {
 			System.out.println("Invalid deposit Rs. " + amount);
