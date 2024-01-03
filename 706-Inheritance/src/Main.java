@@ -5,7 +5,7 @@ public class Main {
 		doAnimalStuff(animal, "slow");
 
 		Dog dog = new Dog();
-		doAnimalStuff(dog, "slow");
+		doAnimalStuff(dog, "fast");
 	}
 
 	public static void doAnimalStuff(Animal animal, String speed) {
