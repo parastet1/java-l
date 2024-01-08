@@ -20,9 +20,12 @@ public class Dog extends Animal {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Dog [earShape=").append(earShape).append(", tailShape=").append(tailShape)
-				.append(", super=").append(super.toString()).append("]");
+		builder.append("Dog [earShape=").append(earShape).append(", tailShape=").append(tailShape).append(", super=")
+				.append(super.toString()).append("]");
 		return builder.toString();
+	}
+
+	public void makeNoise() {
 	}
 
 }
